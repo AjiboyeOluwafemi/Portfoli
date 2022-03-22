@@ -17,13 +17,12 @@ sideBtnClick = ()=> {
 }
 
 
-
-
+const spinner = document.querySelector("#siteSpinner");
+const content = document.querySelector("#siteContent");
 setTimeout(() => {
-    const spinner = document.querySelector("#siteSpinner");
     spinner.classList.add("animate__fadeOut");
 }, 3000);
 setTimeout(() => {
-    const content = document.querySelector("#siteContent");
     content.classList.remove("siteContent");
-}, 3100);
+    spinner.style.display = "none";
+}, 3200);
