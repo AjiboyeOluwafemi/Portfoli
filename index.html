@@ -11,47 +11,21 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="css/styles.css">
 </head> 
 
 <body>
-  <section id="siteContent" class="siteContent">
+
   <div class="top-container">
-    <div onclick="sideBtnClick()" class="sidebtn">
-        <img src="images/svg/dots.svg" alt="">
-    </div>
-    <div id="sideBar" class="sideBar container-fluid animate__animated">
-      <div class="py-3"> 
-        <img class="my-photo" src="images/me.jpeg" alt="my photo">
-        <p>kayode AjiboyeOluwafemi</p>
-        <p>I develop dedicated web applications with an efficient ui/ux and functional front-end/back-end relying on proven technology and frameworks.</p>
-      </div>
-      <div class="row py-3 sideBarDiv">
-        <div class="col-6">
-          <ul>
-            <li>html</li>
-            <li>css3</li>
-            <li>javaScript</li>
-          </ul>
-        </div>
-        <div  class="col-6">
-          <ul>
-            <li>react</li>
-            <li>nodejs</li>
-            <li>mongoDB</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-      </div>
-    </div>
-      <img class="top-cloud" src="images/cloud.png" alt="cloud">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud">
       <div class="title-text">
-        <h1>I'm Kayode.</h1>
-        <h2>A <span class="pro">Software</span> Developer.</h2>
+        <h1  data-aos="fade-right">I'm Kayode.</h1>
+        <h2  data-aos="fade-left">A <span class="pro">Software</span> Developer.</h2>
       </div>
       <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
       <img class="mountain" src="images/mountain.png" alt="mountain-img">
@@ -59,9 +33,33 @@
   
   </div>
 
-  <div class="container" data-aos="zoom-in">
+  <div onclick="sideBtnClick()" class="sidebtn scale">
+    <img id="myImg" src="images/svg/dots.svg" alt="">
+</div>
 
-    <div class="row stacks">
+  <div id="sideBar" class="sideBar container-fluid animate__animated">
+    <div class="pt-3"> 
+      <img class="my-photo" src="images/me.jpeg" alt="my photo">
+      <p>kayode AjiboyeOluwafemi</p>
+      <p>I develop dedicated Web Apps. ui/ux, front-end, back-end.</p>
+    </div>
+    <div class="sideBarDiv">
+        <ul>
+          <li class="scale">html</li>
+          <li class="scale">css3</li>
+          <li class="scale">javaScript</li>
+          <li class="scale">react</li>
+          <li class="scale">nodejs</li>
+          <li class="scale">mongoDB</li>
+        </ul>
+    </div>
+    <div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row stacks scale">
       <div class="col-12 b">
         <b>Stacks</b>
       </div>
@@ -93,25 +91,24 @@
 
   </div>
 
-  <div class="middle-container" data-aos="fade-up">
+  <div class="middle-container">
     <div class="container">
 
 
       <div class="row justify-content-evenly">
-        <div class="col-12">
+        <div class="col-12" data-aos="fade-up">
           <h2>Projects</h2>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4"> 
-          <div class="projectBox">
+        <div class="col-12 col-md-6 col-lg-4 scale" id="scale"> 
+          <div class="projectBox" data-aos="fade-up">
             <img src="images/movieapp.png" alt="">
             <div class="contentBox">
               <h5>Movie App || API </h5>
-              <p>This is a Responsive Movie Application built using React and API for fetching data, which displays the latest movies to watch with trailers and scenes.</p>
+              <p>This is a Responsive Movie Application built using React and API for fetching data.</p>
               <div class="toolsBox">
                 <b>Tools: React, Sass, Axios</b>
-                <br>
-                <div class="button">
+               <div class="button scale">
                   <a href="https://secure-retreat-79071.herokuapp.com/" target="_blank">open site</a>
                 </div>
 
@@ -119,80 +116,75 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="projectBox">
+        <div class="col-12 col-md-6 col-lg-4 scale" id="scale">
+          <div class="projectBox" data-aos="fade-up">
             <img src="images/fruit-veggie.png" alt="">
             <div class="contentBox">
               <h5>Fruit&Veggie || UI/UX </h5>
-              <p>This is a Responsive website built using html, css & JavaScript which focuses on the user experience and interaction.</p>
+              <p>This is a Responsive website built using html, css & JavaScript.</p>
               <div class="toolsBox">
                 <b>Tools: Html, Css, Javascript</b>
-                <br>
-                <div class="button">
+               <div class="button scale">
                   <a href="https://ajiboyeoluwafemi.github.io/fruit-veggie/" target="_blank">open site</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="projectBox">
+        <div class="col-12 col-md-6 col-lg-4 scale" id="scale">
+          <div class="projectBox" data-aos="fade-up">
             <img src="images/academia.png" alt="">
             <div class="contentBox">
               <h5>Academia || BACKEND </h5>
-              <p>Academia is a MERN stack app where you can perform CRUD operations as an administrator or login as a student to access the dashboard.</p>
+              <p>This is a MERN stack app where you can perform CRUD operations as an admin and login as a student.</p>
               <div class="toolsBox">
                 <b>Tools: React-redux, Axios, MongoDB</b>
-                <br>
-                <div class="button">
+               <div class="button scale">
                   <a href="https://radiant-peak-78240.herokuapp.com/" target="_blank">open site</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="projectBox">
+        <div class="col-12 col-md-6 col-lg-4 scale" id="scale">
+          <div class="projectBox" data-aos="fade-up">
             <img src="images/login.png" alt="">
             <div class="contentBox">
               <h5>login-Register || FRONTEND </h5>
-              <p>This is a Responsive app that displays a login and signup page using animations to transition between pages.</p>
+              <p>This is a Responsive app that displays a login and signup page using animations.</p>
               <div class="toolsBox">
                 <b>Tools: Html, Css, Javascript</b>
-                <br>
-                <div class="button">
+               <div class="button scale">
                   <a href="https://ajiboyeoluwafemi.github.io/login/" target="_blank">open site</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="projectBox">
+        <div class="col-12 col-md-6 col-lg-4 scale" id="scale">
+          <div class="projectBox" data-aos="fade-up">
             <img src="images/atlassian.png" alt="">
             <div class="contentBox">
-              <h5>Atlassian clone || BOOTSRTAP </h5>
-              <p>This is a Responsive website built using bootstrap.</p>
+              <h5>Atlassian || BOOTSRTAP </h5>
+              <p>This is a Responsive cloned website built using bootstrap.</p>
               <div class="toolsBox">
                 <b>Tools: Bootstrap</b>
-                <br>
-                <div class="button">
+               <div class="button scale">
                   <a href="https://ajiboyeoluwafemi.github.io/Atlassian/" target="_blank">open site</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="projectBox">
+        <div class="col-12 col-md-6 col-lg-4 scale" id="scale">
+          <div class="projectBox" data-aos="fade-up">
             <img src="images/typeform.png" alt="">
             <div class="contentBox">
               <h5>TypeForm || FRONTEND </h5>
               <p>TypeForm is a Responsive web app built using react, it is a stylish format for form filling.</p>
               <div class="toolsBox">
                 <b>Tools: React</b>
-                <br>
-                <div class="button">
+               <div class="button scale">
                   <a href="https://young-sea-49219.herokuapp.com/" target="_blank">open site</a>
                 </div>
               </div>
@@ -207,12 +199,12 @@
   <div class="container" data-aos="fade-up">
     <h2>Get In Touch</h2>
     <h3>I believe that a good software house should be based on trust, experience and creativity. Focused on the genuine approach to cooperation.</h3>
-    <div class="button">
+    <div class="button scale">
       <a href="tel:08102496369">
         <img src="images/svg/phone.svg" alt="">
         </a>  
     </div>
-       <div class="button">
+       <div class="button scale">
         <a href="mailto:kayodeaws@gmail.com"><img src="images/svg/email.svg" alt=""></a>
        </div>
   </div>
@@ -220,13 +212,7 @@
   <div class="bottom-container">
     <p class="copyright"><img src="images/svg/copyright.svg" alt=""> 2022 Kayode AjiboyeOluwafemi.</p>
   </div>
-</section>
 
-<section id="siteSpinner" class="animate__animated">
-  <div id="spinner">
-      <div class="spinner"></div>
-  </div>
-</section>
 
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
