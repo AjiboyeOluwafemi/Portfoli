@@ -2,7 +2,8 @@ body {
   color: #40514E;
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -28,6 +29,10 @@ h3 {
   margin: 10px 0 5px 0;
 }
 
+h5 {
+  color: #66BFBF;
+}
+
 hr {
   border: dotted #EAF6F6 6px;
   border-bottom: none;
@@ -37,13 +42,13 @@ hr {
 
 .my-photo{
   width: 25%;
-  border-radius: 30%;
+  border-radius: 50%;
 }
 
 .top-container {
   background-color: #E4F9F5;
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;;
   width: 100%;
   overflow: hidden;
 } 
@@ -110,23 +115,21 @@ hr {
 
 .projectBox {
   width: 100%;
-  height: auto;
   background-color: #E4F9F5;
-  margin: 5px;
+  margin: 12px 5px;
   border-radius: 5px;
   padding: 8px;
 }
 
-.contentBox {
-  text-align: left;
-  height: 250px;
-  padding: 10px 0;
-  position: relative;
+.projectBox p{
+  line-height: 2;
+  height: 100px;
 }
 
-.toolsBox {
-  position: absolute;
-  bottom: 3px;
+.contentBox {
+  text-align: left;
+  padding: 10px 0;
+  position: relative;
 }
 
 .middle-container {
@@ -142,15 +145,19 @@ hr {
 .middle-container a {
   text-decoration: none;
   background-color: #66BFBF;
-  border-radius: 2px;
+  border-radius: 10px;
   color: #fff;
-  padding: 3px;
-  margin: 2px 0;
+  padding: 10px;
 }
 
 .middle-container h5 {
   margin: 8px 0;
   font-weight: bold;
+}
+
+.middle-container b {
+  display: block;
+  margin-bottom: 12px;;
 }
 
 .middle-container h2 {
@@ -160,22 +167,28 @@ hr {
 .stacks {
   overflow: hidden;
   margin: 50px 0;
+}
+
+.scale {
   transform: scale(1);
   transition: .3s ease-in-out;
+}
+.scale:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#scale:hover {
+  cursor: default;
 }
 
 .b {
   padding: 30px;
   font-size: 1.5rem;
 }
-.stacks:hover {
-  transform: scale(1.1);
-}
 
 .button {
   display: inline-block;
-  transform: scale(1);
-  transition: .3s ease-in-out;
 }
 
 .button img{
@@ -185,47 +198,37 @@ hr {
   border-radius: 10px;
 }
 
-.button:hover {
-  transform: scale(1.2);
-}
 
 .sidebtn {
   position: absolute;
-  top: 5%;
-  right: 0;
-  margin: 0 10px;
-  transform: scale(1);
+  top: 4%;
+  right: 2%;
   border-radius: 10px;
   background-color: #66BFBF;
-  transition: .3s ease-in-out;
+  z-index: 2;
 }
 
-.sidebtn:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
+  
 
 .sideBar {
   display: none;
-  width: 40vw;
-  height: 100vh;
+  width: 25vw;
   position: absolute;
-  top: 5%;
+  top: 3%;
   right: 0;
-  margin-top: 40px;
   background-color: #F4F9F9;
   color: #111;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .sideBarDiv {
-  background-color: #fff;
+  text-align: left;
 }
 
 .sideBar p:nth-of-type(1) {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 16px;
   font-weight: bold;
   color: #66BFBF;
@@ -238,6 +241,7 @@ hr {
     font-size: 1rem;
     font-weight: bold;
     color: #66BFBF;
+    margin: 5px 0;
   }
 .sideBar div:nth-of-type(2) {
 text-align: left;
@@ -245,7 +249,7 @@ text-align: left;
 
 .top-cloud {
   position: absolute;
-  top: 8%;
+  top: 5%;
   animation: top-cloud 60s infinite;
 }
 .bottom-cloud {
@@ -269,69 +273,6 @@ text-align: left;
   100% { left:25%;}
 }
 
-.siteContent {
- height: 100vh;
- overflow: hidden;
-}
-#siteSpinner {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 20;
-}
-
-#spinner {
-  height: 100vh;
-  background-color: #024142;
-  display: grid;
-  place-items: center;
-}
-
-.spinner {
-  width: 60px;
-  height: 60px;
-  margin: auto;
-  position: relative;
-}
-
-.spinner::before {
-  content: "";
-  width: 60px;
-  height: 5px;
-  background-color: #111;
-  opacity: .3;
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  border-radius: 50%;
-  animation: spinner-shadow .5s linear infinite;
-}
-
-.spinner::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #3ef7fa;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 4px;
-  animation: spinner-spin .5s linear infinite;
-}
-
-@keyframes spinner-shadow {
-  0%, 100%   { transform: scale(1, 1);}
-  50%  {transform: scale(1.2, 1);}
-}
-@keyframes spinner-spin {
-  17% {border-bottom-right-radius: 3px;}
-  25% {transform: translateY(9px) rotate(22.5deg);}
-  50% {transform: translateY(18px) scale(1, .9) rotate(45deg); border-bottom-right-radius: 40px;}
-  75% {transform: translateY(9px) rotate(67.5deg);}
-  100% {transform: translateY(0) rotate(90deg);}
-}
 
 @media  screen and (max-width: 576px) {
   .top-cloud {
@@ -349,18 +290,12 @@ text-align: left;
   h2 {
     font-size: 1.5rem;
   }
-  .contentBox {
-    height: unset;
-  }
-  .toolsBox {
-    position: static;
-  }
   .button img{
     margin: 20px;
     padding: 10px 15px;
   }
   .sideBar {
-    width: 70vw;
+    width: 60vw;
   }
   .sideBar p:nth-of-type(1) {
     font-size: .9rem;
@@ -372,4 +307,10 @@ text-align: left;
       font-size: .75rem;
     }
 
+}
+
+@media  screen and (max-width: 768px) {
+  .projectBox p{
+    height: unset;
+  }
 }
