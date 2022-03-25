@@ -13,10 +13,10 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
-<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
@@ -222,6 +222,13 @@
     AOS.init(
       {once: true}
     );
+    
+      document.querySelectorAll("img")
+  .forEach((img) => 
+  img.addEventListener('load', () => 
+                  AOS.refresh()
+                  )
+          );
   </script>
 </body>
 <script src="index.js"></script>
