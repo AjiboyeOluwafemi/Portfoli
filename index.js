@@ -37,4 +37,4 @@ setTimeout(() => {
 setTimeout(() => {
     content.classList.remove("siteContent");
     spinner.style.display = "none";
-}, 3300);
+}, 3250);
