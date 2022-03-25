@@ -75,12 +75,6 @@ hr {
   padding-bottom: 5%;
 }
 
-.skill-row {
-  width: 70%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-}
-
 .pro {
   text-decoration: underline;
 }
@@ -95,24 +89,6 @@ hr {
   margin: 40px auto 60px;
 }
 
-.code-img {
-  background-color: #66BFBF;
-  float: left;
-  margin-right: 30px;
-  padding: 15px;
-  border-radius: 5px;
-  font-size: 2.5rem;
-}
-
-.chilli-img {
-  border-radius: 5px;
-  background-color: #66BFBF;
-  float: right;
-  margin-left: 30px;
-  padding: 15px;
-  font-size: 2.5rem;
-}
-
 .projectBox {
   width: 100%;
   background-color: #E4F9F5;
@@ -120,6 +96,9 @@ hr {
   border-radius: 5px;
   padding: 8px;
 }
+
+.projectBox p{
+  width: 100%;}
 
 .projectBox p{
   line-height: 2;
