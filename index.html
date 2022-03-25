@@ -8,11 +8,10 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
   <title>Kayode AjiboyeOluwafemi</title>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +22,12 @@
 </head> 
 
 <body>
-
+<section id="siteContent" class="siteContent">
   <div class="top-container">
     <img class="top-cloud" src="images/cloud.webp" alt="cloud">
       <div class="title-text">
-        <h1  data-aos="fade-right">I'm Kayode.</h1>
-        <h2  data-aos="fade-left">A <span class="pro">Software</span> Developer.</h2>
+        <h1  data-aos="fade-right" data-aos-delay="3000" data-aos-duration="1000">I'm Kayode.</h1>
+        <h2  data-aos="fade-left" data-aos-delay="3000" data-aos-duration="1000">A <span class="pro">Software</span> Developer.</h2>
       </div>
       <img class="bottom-cloud" src="images/cloud.webp" alt="cloud">
       <img class="mountain" src="images/mountain.webp" alt="mountain-img">
@@ -60,7 +59,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" data-aos="zoom-in">
 
     <div class="row stacks scale">
       <div class="col-12 b">
@@ -215,6 +214,13 @@
   <div class="bottom-container">
     <p class="copyright"><img src="images/svg/copyright.svg" alt=""> 2022 Kayode AjiboyeOluwafemi.</p>
   </div>
+</section>
+
+  <section id="siteSpinner" class="animate__animated">
+    <div id="spinner">
+        <div class="spinner"></div>
+    </div>
+  </section>
 
 
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -222,8 +228,7 @@
     AOS.init(
       {once: true}
     );
-    
-      document.querySelectorAll("img")
+    document.querySelectorAll("img")
   .forEach((img) => 
   img.addEventListener('load', () => 
                   AOS.refresh()
