@@ -92,7 +92,7 @@ hr {
 .projectBox {
   width: 100%;
   background-color: #E4F9F5;
-  margin: 12px 5px;
+  margin: 12px 0;
   border-radius: 5px;
   padding: 8px;
 }
@@ -181,13 +181,11 @@ hr {
 .sidebtn {
   position: absolute;
   top: 4%;
-  right: 2%;
+  right: 2.5%;
   border-radius: 10px;
   background-color: #66BFBF;
   z-index: 2;
 }
-
-  
 
 .sideBar {
   display: none;
@@ -273,6 +271,9 @@ text-align: left;
     margin: 20px;
     padding: 10px 15px;
   }
+  .sidebtn {
+    right: 4%;
+  }
   .sideBar {
     width: 60vw;
   }
@@ -301,9 +302,11 @@ text-align: left;
 }
 
 /* spinner */
+#siteContent {
+  overflow: hidden;
+}
 .siteContent {
   height: 100vh;
-  overflow: hidden;
   visibility: hidden;
 }
 #siteSpinner {
