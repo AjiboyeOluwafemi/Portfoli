@@ -10,16 +10,18 @@ sideBtnClick = ()=> {
 
         setTimeout(() => {
             getImg.src = "images/svg/close.svg";
-        }, 200);
+            getSideBar.style.position = "absolute";
+        }, 1000);
 
         sideToggle = false;
     } else if (!sideToggle) {
-        
         getSideBar.classList.remove("animate__fadeInRight");
         getSideBar.classList.add("animate__fadeOutRight");
+        getSideBar.style.position = "fixed";
+
         setTimeout(() => {
             getImg.src = "images/svg/dots.svg";
-        }, 200);
+        }, 500);
         
         sideToggle = true;
     } 
