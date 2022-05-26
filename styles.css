@@ -53,10 +53,11 @@ hr {
   padding-top: 50px;;
   width: 100%;
   overflow: hidden;
+  color: #66BFBF;
 } 
 
 .mountain {
-  width: 60%;
+  width: 45%;
 }
 
 .bottom-container {
@@ -112,7 +113,7 @@ hr {
   padding: 10px 0;
   position: relative;
 }
-
+ 
 .middle-container {
   background-color: #F4F9F9;
   padding-bottom: 30px;
@@ -143,11 +144,20 @@ hr {
 
 .middle-container h2 {
  padding-top: 30px;
+ font-weight: bolder;
+ text-decoration: underline;
+ text-underline-offset: 11px;
 }
 
 .stacks {
   overflow: hidden;
   margin: 50px 0;
+}
+
+.stacks h2 {
+  padding-top: 0;
+  font-weight: bolder;
+  color: #4b4b4b;
 }
 
 .scale {
@@ -260,7 +270,7 @@ text-align: left;
   }
   .bottom-cloud {
     width: 20%;
-    bottom: 30%;
+    bottom: 25%;
   }
   h1 {
     font-size: 3rem;
@@ -290,7 +300,7 @@ text-align: left;
     }
 }
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 880px) {
   .projectBox p{
     height: unset;
   }
@@ -300,7 +310,15 @@ text-align: left;
   #scale:hover {
     transform: unset;
   }
+  .mountain {
+    width: 60%;
+  }
+}
 
+@media  screen and (min-height: 1200px) {
+  .bottom-cloud {
+    bottom: 25%;
+  }
 }
 
 /* spinner */
